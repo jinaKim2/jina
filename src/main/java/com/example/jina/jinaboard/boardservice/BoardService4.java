@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.List;
 
 @Service
-public class BoardService {
+public class BoardService4 {
 
     @Autowired
     BoardDao boardDao;

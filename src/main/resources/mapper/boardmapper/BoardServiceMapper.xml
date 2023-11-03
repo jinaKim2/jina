@@ -11,5 +11,20 @@
         from t_board
     </select>
 
+    <insert id="insert" parameterType="com.example.jina.jinaboard.persistance.BoardVo">
+        insert into t_board2(
+                              content
+                            , visit_cnt
+                            , reg_id
+                            , reg_dt
+                            , del_yn
+        ) values (
+                     #{content}
+                 , #{visitCnt}
+                 , #{regId}
+                 , #{regDt}
+                 , #{delYn}
+                 )
+    </insert>
 
 </mapper>
